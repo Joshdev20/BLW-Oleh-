@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration Form - BLW OLEH Campus</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .form-section {
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .required::after {
+            content: " *";
+            color: #ef4444;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-church text-primary text-2xl mr-3"></i>
+                    <span class="font-bold text-xl text-gray-800">BLW OLEH Campus</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition">
+                        <i class="fas fa-home mr-2"></i>Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
+        
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+                Delsu Praise Night Volunteer Registration Form
+            </h1>
+            <p class="text-gray-600">Please fill out all required fields marked with *</p>
+        </div>
+
+        <form id="volunteerForm" class="space-y-6" 
+              action="https://submit-form.com/TunP3Hh6a" 
+              method="POST">
+            
+            <!-- Formspark Hidden Fields -->
+            <input type="hidden" name="_subject" value="New Volunteer Registration - Church Crusade">
+            <input type="hidden" name="_replyto" value="{{email}}">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <!-- Crusade Information Section -->
+            <div class="form-section border-l-4 border-primary">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-info-circle text-primary mr-3"></i>
+                    Crusade Information
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Church Name</label>
+                        <input type="text" name="church_name" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition"
+                               placeholder="Enter church name">
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Crusade Theme</label>
+                        <input type="text" name="crusade_theme" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition"
+                               placeholder="Enter crusade theme">
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Crusade Date</label>
+                        <input type="date" name="crusade_date" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Information Section -->
+            <div class="form-section border-l-4 border-secondary">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-user text-secondary mr-3"></i>
+                    Personal Information
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Full Name</label>
+                        <input type="text" name="full_name" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+                               placeholder="Enter your full name">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Phone Number</label>
+                        <input type="tel" name="phone_number" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+                               placeholder="e.g., +234 800 000 0000">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">WhatsApp Number</label>
+                        <input type="tel" name="whatsapp_number" 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+                               placeholder="e.g., +234 800 000 0000">
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Email Address</label>
+                        <input type="email" name="email" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+                               placeholder="your.email@example.com">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Gender</label>
+                        <div class="flex space-x-6">
+                            <label class="flex items-center">
+                                <input type="radio" name="gender" value="Male" required 
+                                       class="w-4 h-4 text-secondary border-gray-300 focus:ring-secondary">
+                                <span class="ml-2 text-gray-700">Male</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="gender" value="Female" 
+                                       class="w-4 h-4 text-secondary border-gray-300 focus:ring-secondary">
+                                <span class="ml-2 text-gray-700">Female</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Age</label>
+                        <input type="number" name="age" required min="1" max="120"
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+                               placeholder="Your age">
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Marital Status</label>
+                        <div class="flex space-x-6">
+                            <label class="flex items-center">
+                                <input type="radio" name="marital_status" value="Single" required 
+                                       class="w-4 h-4 text-secondary border-gray-300 focus:ring-secondary">
+                                <span class="ml-2 text-gray-700">Single</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="marital_status" value="Married" 
+                                       class="w-4 h-4 text-secondary border-gray-300 focus:ring-secondary">
+                                <span class="ml-2 text-gray-700">Married</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="marital_status" value="Others" 
+                                       class="w-4 h-4 text-secondary border-gray-300 focus:ring-secondary">
+                                <span class="ml-2 text-gray-700">Others</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Occupation</label>
+                        <input type="text" name="occupation" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+                               placeholder="Your occupation">
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Residential Address</label>
+                        <textarea name="residential_address" required rows="2"
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+                                  placeholder="Enter your full address"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Church Membership Section -->
+            <div class="form-section border-l-4 border-accent">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-church text-accent mr-3"></i>
+                    Church Membership
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-3 required">Are you a member of this church?</label>
+                        <div class="flex space-x-6">
+                            <label class="flex items-center">
+                                <input type="radio" name="church_member" value="Yes" required 
+                                       class="w-4 h-4 text-accent border-gray-300 focus:ring-accent" onchange="toggleHomeChurch(false)">
+                                <span class="ml-2 text-gray-700">Yes</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="church_member" value="No" 
+                                       class="w-4 h-4 text-accent border-gray-300 focus:ring-accent" onchange="toggleHomeChurch(true)">
+                                <span class="ml-2 text-gray-700">No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="homeChurchField" class="hidden">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Name of Home Church (if different)</label>
+                        <input type="text" name="home_church" id="homeChurchInput"
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition"
+                               placeholder="Enter your home church name">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Departmental Application Section -->
+            <div class="form-section border-l-4 border-purple-600">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2 flex items-center">
+                    <i class="fas fa-briefcase text-purple-600 mr-3"></i>
+                    Departmental Application
+                </h2>
+                <p class="text-sm text-gray-600 mb-6">Please tick <strong>maximum of 2 departments</strong> you would like to serve in during the crusade</p>
+                
+                <div class="grid md:grid-cols-2 gap-4" id="departmentCheckboxes">
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Ushering/Protocol" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Ushering / Protocol</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Security" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Security</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Prayer/Intercession" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Prayer / Intercession</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Choir/Worship Team" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Choir / Worship Team</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Technical" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Technical (Sound, Lights, Video, Live Streaming)</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Media & Publicity" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Media & Publicity (Photography, Videography, Social Media)</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Medical/First Aid" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Medical / First Aid</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Welfare & Hospitality" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Welfare & Hospitality</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Counselling/Follow-up" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Counselling / Follow-up</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Logistics & Setup" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Logistics & Setup</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Evangelism/Outreach" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Evangelism / Outreach</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Children's Ministry" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Children's Ministry</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Decoration & Stage Management" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Decoration & Stage Management</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                        <input type="checkbox" name="departments[]" value="Transportation" 
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600 department-checkbox">
+                        <span class="ml-3 text-gray-700">Transportation</span>
+                    </label>
+
+                    <label class="flex items-start p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition md:col-span-2">
+                        <input type="checkbox" name="departments_other_check" id="departmentsOtherCheck"
+                               class="mt-1 w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-600">
+                        <span class="ml-3 text-gray-700 flex-1">Others (please specify):</span>
+                        <input type="text" name="departments_other" id="departmentsOtherInput" disabled
+                               class="ml-3 flex-1 px-3 py-1 border border-gray-300 rounded text-sm focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                               placeholder="Specify department">
+                    </label>
+                </div>
+                <p id="departmentError" class="text-red-600 text-sm mt-2 hidden">Please select maximum 2 departments</p>
+            </div>
+
+            <!-- Experience & Skills Section -->
+            <div class="form-section border-l-4 border-green-600">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-star text-green-600 mr-3"></i>
+                    Experience & Skills
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-3 required">Have you served in any of these departments before?</label>
+                        <div class="flex space-x-6 mb-4">
+                            <label class="flex items-center">
+                                <input type="radio" name="previous_service" value="Yes" required 
+                                       class="w-4 h-4 text-green-600 border-gray-300 focus:ring-green-600" onchange="togglePreviousDept(true)">
+                                <span class="ml-2 text-gray-700">Yes</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="previous_service" value="No" 
+                                       class="w-4 h-4 text-green-600 border-gray-300 focus:ring-green-600" onchange="togglePreviousDept(false)">
+                                <span class="ml-2 text-gray-700">No</span>
+                            </label>
+                        </div>
+                        <div id="previousDeptField" class="hidden">
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">If Yes, which department(s)?</label>
+                            <input type="text" name="previous_departments" id="previousDeptInput"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-transparent transition"
+                                   placeholder="Enter department names">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">List any relevant skills or experience you have</label>
+                        <p class="text-sm text-gray-500 mb-2">e.g., sound engineering, first aid certificate, driving, photography, etc.</p>
+                        <textarea name="skills" rows="3"
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-transparent transition"
+                                  placeholder="List your skills and experience..."></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2 required">Why do you want to serve in the crusade? (Briefly)</label>
+                        <textarea name="why_serve" required rows="3"
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-600 focus:border-transparent transition"
+                                  placeholder="Share your motivation for serving..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Availability Section -->
+            <div class="form-section border-l-4 border-red-600">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-calendar-alt text-red-600 mr-3"></i>
+                    Availability
+                </h2>
+                
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-4 required">I will be available for:</label>
+                    <div class="space-y-3">
+                        <label class="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                            <input type="checkbox" name="availability[]" value="Pre-crusade meetings"
+                                   class="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-600">
+                            <span class="ml-3 text-gray-700">Pre-crusade meetings</span>
+                        </label>
+                        
+                        <label class="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                            <input type="checkbox" name="availability[]" value="Setup days (before crusade)"
+                                   class="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-600">
+                            <span class="ml-3 text-gray-700">Setup days (before crusade)</span>
+                        </label>
+                        
+                        <label class="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                            <input type="checkbox" name="availability[]" value="All crusade days"
+                                   class="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-600">
+                            <span class="ml-3 text-gray-700">All crusade days</span>
+                        </label>
+                        
+                        <label class="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                            <input type="checkbox" name="availability[]" value="Follow-up activities (after crusade)"
+                                   class="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-600">
+                            <span class="ml-3 text-gray-700">Follow-up activities (after crusade)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Declaration Section -->
+            <div class="form-section border-l-4 border-gray-600">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-file-signature text-gray-600 mr-3"></i>
+                    Declaration
+                </h2>
+                
+                <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-700 mb-4">
+                        I hereby declare that the information given above is true and correct. I am willing to serve with commitment, integrity, and in submission to the leadership of the crusade committee.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2 required">Signature</label>
+                            <input type="text" name="signature" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-600 focus:border-transparent transition"
+                                   placeholder="Type your full name as signature">
+                            <p class="text-xs text-gray-500 mt-1">Type your full name to serve as digital signature</p>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2 required">Date</label>
+                            <input type="date" name="date" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-600 focus:border-transparent transition">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="flex justify-center pb-8">
+                <button type="submit" id="submitBtn"
+                        class="bg-primary text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-blue-800 transition duration-300 shadow-lg flex items-center">
+                    <i class="fas fa-paper-plane mr-3"></i>
+                    Submit Registration
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2026 BLW OLEH Campus. All rights reserved.</p>
+            <p class="text-gray-400 text-sm">Serving with Excellence and Integrity</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleHomeChurch(show) {
+            const field = document.getElementById('homeChurchField');
+            const input = document.getElementById('homeChurchInput');
+            if (show) {
+                field.classList.remove('hidden');
+                input.required = true;
+            } else {
+                field.classList.add('hidden');
+                input.required = false;
+                input.value = '';
+            }
+        }
+
+        function togglePreviousDept(show) {
+            const field = document.getElementById('previousDeptField');
+            const input = document.getElementById('previousDeptInput');
+            if (show) {
+                field.classList.remove('hidden');
+                input.required = true;
+            } else {
+                field.classList.add('hidden');
+                input.required = false;
+                input.value = '';
+            }
+        }
+
+        // Toggle Others department input
+        document.getElementById('departmentsOtherCheck').addEventListener('change', function() {
+            const input = document.getElementById('departmentsOtherInput');
+            input.disabled = !this.checked;
+            if (this.checked) input.focus();
+        });
+
+        // Department limit validation
+        const departmentCheckboxes = document.querySelectorAll('.department-checkbox');
+        const departmentError = document.getElementById('departmentError');
+        const otherCheck = document.getElementById('departmentsOtherCheck');
+
+        departmentCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const checked = document.querySelectorAll('.department-checkbox:checked').length;
+                if (checked > 2 || (checked === 2 && otherCheck.checked)) {
+                    this.checked = false;
+                    departmentError.classList.remove('hidden');
+                    setTimeout(() => departmentError.classList.add('hidden'), 3000);
+                }
+            });
+        });
+
+        otherCheck.addEventListener('change', function() {
+            const checked = document.querySelectorAll('.department-checkbox:checked').length;
+            if (this.checked && checked >= 2) {
+                this.checked = false;
+                departmentError.classList.remove('hidden');
+                setTimeout(() => departmentError.classList.add('hidden'), 3000);
+            }
+        });
+
+        // Main Form Submit Handler
+        const form = document.getElementById('volunteerForm');
+        const submitBtn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', function(e) {
+            // Validation
+            const availabilityChecked = document.querySelectorAll('input[name="availability[]"]:checked').length;
+            if (availabilityChecked === 0) {
+                e.preventDefault();
+                alert('Please select at least one availability option.');
+                return;
+            }
+
+            const deptChecked = document.querySelectorAll('.department-checkbox:checked').length;
+            const otherChecked = document.getElementById('departmentsOtherCheck').checked;
+            if (deptChecked === 0 && !otherChecked) {
+                e.preventDefault();
+                alert('Please select at least one department.');
+                return;
+            }
+
+            // Show loading state
+            const originalHTML = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-3"></i>Submitting...';
+            submitBtn.disabled = true;
+
+            // Safety timeout - restore button if submission takes too long (network issue, wrong Form ID, etc.)
+            setTimeout(() => {
+                if (submitBtn.disabled) {
+                    submitBtn.innerHTML = originalHTML;
+                    submitBtn.disabled = false;
+                    alert("Submission is taking longer than expected. Please check your internet connection and try again.");
+                }
+            }, 10000); // 10 seconds
+        });
+
+        // Set default date
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            const dateInput = document.querySelector('input[name="date"]');
+            if (dateInput) dateInput.value = today;
+        });
+    </script>
+</body>
+</html>
